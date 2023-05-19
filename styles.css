@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+}
+
+/* HEADER */
+
+header {
+  height: 8vh;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 5ch;
+  border-bottom: 8px solid greenyellow;
+  
+  animation: blackandwhite 6s linear infinite alternate;
+  z-index: 2;
+}
+
+@keyframes blackandwhite {
+  0% {
+    background-color: black;
+    color: white;
+  }
+
+  40% {
+    color: white;
+  }
+
+  50% {
+    color: black;
+  }
+
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+.song{
+  position: relative;
+  top: 0.2rem;
+  left: 0rem;
+  width: 6rem;
+  height: 6rem;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 1;
+  background-color: rgb(250, 6, 254);
+  animation: slideUp 3s;
+}
