@@ -18,7 +18,7 @@ header {
   font-size: 5ch;
   border-bottom: 8px solid greenyellow;
   
-  animation: blackandwhite 6s linear infinite alternate;
+  animation: blackandwhite 4s linear infinite alternate;
   z-index: 2;
 }
 

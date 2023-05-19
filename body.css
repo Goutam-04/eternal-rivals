@@ -13,7 +13,7 @@
   .uchiha .pic img {
     height: 96%;
     margin-left: 6svw;
-    -webkit-animation: fadein 3s,mover 8s infinite alternate;
+    -webkit-animation: fadein 3s,mover 2s infinite alternate;
     
     
   }
@@ -51,6 +51,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 12rem;
     margin: auto 0;
+    
   }
   
   .box {
@@ -69,6 +70,7 @@
   .box:hover {
     background-color: #999;
     background-position: center;
+    
     box-shadow: 0 0 4px #fff;
   }
   
@@ -94,7 +96,7 @@
   .uzumaki .pic img {
     height: 96%;
     margin-right: 7vw;
-    -webkit-animation: fadein 3s,mover 8s infinite alternate;
+    -webkit-animation: fadein 3s,mover 2s infinite alternate;
     
     
   }
@@ -126,10 +128,12 @@
     margin-left: 1rem;
   }
   
+  /* AKATSUKI */
+  
   
   
   /* CURVES */
-  .curve1{background-color: #EA7A45;border: none;}
+  .curve1{background:#EA7A45;border: none;}
   .curve1 .custom-shape-divider-top-1684319982 {
     position: relative;
     top: 0;
@@ -148,7 +152,7 @@
   }
   
   .curve1 .custom-shape-divider-top-1684319982 .shape-fill {
-    fill: #240A5D;
+    fill: #240a5d;
   }
   
   /* ANIMATIONS */
