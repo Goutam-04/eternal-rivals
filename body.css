@@ -42,6 +42,23 @@
     
   }
   
+/* AMATERASU EFFECT */
+
+.amaterasu{
+  position:absolute;
+  top: 10rem;
+  right: 3rem;
+  z-index: 2;
+  height: 74vh;
+  width: 51vw;
+  animation: flames 0.02s infinite alternate;
+}
+@keyframes flames {
+  0%{transform: translate(0,0);}
+  100%{transform: translate(3px,3px);}
+  
+}
+
   /* GELLERY */
   
   .gallery {
@@ -70,7 +87,7 @@
   .box:hover {
     background-color: #999;
     background-position: center;
-    
+   
     box-shadow: 0 0 4px #fff;
   }
   
@@ -133,7 +150,7 @@
   
   
   /* CURVES */
-  .curve1{background:#EA7A45;border: none;}
+  .curve1{background:#EA7A45;border: none;border-top:#240a5d;border-bottom:#EA7A45 ;}
   .curve1 .custom-shape-divider-top-1684319982 {
     position: relative;
     top: 0;
@@ -142,6 +159,7 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    /* border-top: none; */
   }
   
   .curve1 .custom-shape-divider-top-1684319982 svg {

@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  body {
+    font-family: 'Anton', sans-serif;
+  }
+  
+  /* HEADER */
+  
+  header {
+    height: 8vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 5ch;
+    border-bottom: 8px solid greenyellow;
+    
+    animation: blackandwhite 4s linear infinite alternate;
+    z-index: 2;
+  }
+  
+  @keyframes blackandwhite {
+    0% {
+      background-color: black;
+      color: white;
+    }
+  
+    40% {
+      color: white;
+    }
+  
+    50% {
+      color: black;
+    }
+  
+    100% {
+      background-color: white;
+      color: black;
+    }
+  }
+  .song{
+    position: relative;
+    top: 0.2rem;
+    left: 0rem;
+    width: 6rem;
+    height: 6rem;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1;
+    background-color: rgb(250, 6, 254);
+    animation: slideUp 3s;
+  }
+
+ .sym {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    animation:blackandwhite 4s linear infinite alternate;
+  
+  }
+ .sym .img1 {
+    margin: 0;
+    height: 4%;
+    width: 11%;
+    /* animation:  move 7s linear infinite alternate; */
+    /* animation: fadein 2s; */
+  }.sym .img2{
+    height: 4%;
+    width: 5%;
+    margin-right: 2rem;
+  }
+  
+.sym h3 {
+    /* text-orientation: upright;
+    writing-mode: vertical-lr; */
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    letter-spacing: 30px;
+   
+    /* animation:  move 7s linear infinite alternate; */
+}
+@keyframes move {
+    0%{
+        transform: translateX(-30vw);
+    }
+    100%{
+        transform: translate(30vw);
+    }
+    
+}
+
+.bg{
+
+    background-image: url(images/front.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  backdrop-filter: blur(5px);
+  }
+/* .im1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    backdrop-filter:blur(5px);
+} */
+.im2{
+    height: 80%;
+    width: 80%;
+   
+    position: relative;
+    top: 10%;
+    left: 10%;
+   z-index: 1;
+}
+.box{
+  background-image: linear-gradient(black,grey);
+  padding-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  justify-content: space-evenly;
+  row-gap: 3em;  
+
+
+}
+
+.item{
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+  display: flex;
+}
+.item:hover .overlay{
+  height: 60%
+}
+.item:hover{
+  transform: translateY(-20px);
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(14, 150, 171, 0.634);
+  opacity: 0.8;
+  overflow:hidden;
+  width: 100%;
+  height: 0;
+  transition: 1s ease;
+}
+
+.layer h2{
+
+  font-weight:400;
+  font-size:20px;
+  color: rgb(12, 9, 4);
+}
+.layer{
+  opacity: 3;
+  width: 100%;
+  height: 100%;   
+  position: absolute;
+  justify-content: center;
+  align-items:start;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 0.5s;
+
+}
+
+img{
+  width: 25rem;
+  height: 15rem;
+  border-radius: 5px;
+  filter:drop-shadow(10px 10px 10px)
+}
+@media only screen and (max-width: 600px){
+
+  .t1{
+      font-size: 15px;
+      text-align: center;
+  }
+  .t2{
+      font-size: 40px;
+  }
+  .container{
+      display: flex;
+      flex-direction: column;
+  }
+  img{
+      width: 300px;
+  }
+  .t3{
+      font-size:15px;
+  }
+  .layer h3{
+      font-size:25px;
+  }
+
+}
+@media only screen and (max-width:1013px){
+  .sym h3{
+    font-size: 1.4rem;
+    letter-spacing: 22px;
+  }
+}
+@media only screen and (max-width:752px){
+  .sym h3{
+    font-size: 1.1rem;
+    letter-spacing: 18px;
+  }
+}
+@media only screen and (max-width:600px){
+  .sym h3{
+    font-size: 1.1rem;
+    letter-spacing: 10px;
+  }
+}
+@media only screen and (max-width:470px){
+  .sym h3{
+    font-size: 1.0rem;
+    letter-spacing: 6px;
+  }
+}
+footer{
+  background-color: grey;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+ 
