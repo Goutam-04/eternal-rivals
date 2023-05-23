@@ -257,13 +257,13 @@ backdrop-filter: blur(5px);
   height: 60%;
   background-image: url(images/cannonbolt.png);
   background-size: 100% 100%;
-  animation:changeimage 20s linear infinite alternate-reverse;
+  animation:changeimage 15s linear infinite alternate-reverse;
   display: grid;
   place-items: center;
   width: 80%;
    
   position: relative;
-  height: 80vh;
+  height: 75vh;
     top: 10%;
     left: 10%;
    z-index: 1;
@@ -306,4 +306,27 @@ backdrop-filter: blur(5px);
   left: 0;
   right: 0;
   margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, rgb(3, 96, 3) 30%, rgb(5, 239, 5) 70%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff04; 
 }
