@@ -25,11 +25,11 @@
   @keyframes blackandwhite {
     0% {
       background-color: black;
-      color: white;
+      color: rgb(0, 255, 0);
     }
   
     40% {
-      color: white;
+      color:rgb(0, 255, 0);
     }
   
     50% {
@@ -37,7 +37,7 @@
     }
   
     100% {
-      background-color: white;
+      background-color: rgb(0, 255, 0);
       color: black;
     }
   }
@@ -67,7 +67,8 @@
  .sym .img1 {
     margin: 0;
     height: 4%;
-    width: 11%;
+    width: 5%;
+    margin-left:2REM ;
     /* animation:  move 7s linear infinite alternate; */
     /* animation: fadein 2s; */
   }.sym .img2{
@@ -95,13 +96,7 @@
     
 }
 
-.bg{
 
-    background-image: url(images/front.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  backdrop-filter: blur(5px);
-  }
 /* .im1{
     height: 100%;
     width: 100%;
@@ -110,17 +105,17 @@
     left: 0;
     backdrop-filter:blur(5px);
 } */
-.im2{
-    height: 80%;
+/* .im2{
     width: 80%;
    
-    position: relative;
+    positio
+    height: 80%;n: relative;
     top: 10%;
     left: 10%;
    z-index: 1;
-}
+} */
 .box{
-  background-image: linear-gradient(black,grey);
+  background-image: linear-gradient(rgb(7, 232, 7),black);
   padding-top: 1.5rem;
   width: 100%;
   text-align: center;
@@ -151,7 +146,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(14, 150, 171, 0.634);
+  background-color: rgba(4, 237, 51, 0.693);
   opacity: 0.8;
   overflow:hidden;
   width: 100%;
@@ -230,14 +225,58 @@ img{
 @media only screen and (max-width:470px){
   .sym h3{
     font-size: 1.0rem;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
+  }
+  .sym .img2{
+    margin-right: 0.8rem;
+  }
+  .sym .img1{
+    margin-left: 0.8rem;
   }
 }
 footer{
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
   text-align: center;
   padding: 1rem;
+  color: greenyellow;
 }
 
 
- 
+ /* ***************************************** SLIDER ********************************************** */
+
+ .bg{
+
+  background-image: linear-gradient(black,rgb(7, 244, 7));
+  background-repeat: no-repeat;
+  background-size: cover;
+backdrop-filter: blur(5px);
+}
+ .imgslider{
+  width: 60%;
+  height: 60%;
+  background-image: url(images/cannonbolt.png);
+  background-size: 100% 100%;
+  animation:changeimage 20s linear infinite alternate-reverse;
+  display: grid;
+  place-items: center;
+  width: 80%;
+   
+  position: relative;
+  height: 80vh;
+    top: 10%;
+    left: 10%;
+   z-index: 1;
+ }
+ @keyframes changeimage {
+  0%{background-image: url(images/cannonbolt.png);}
+  20%{background-image: url(images/dimondhead.png);}
+  35%{background-image: url(images/dimondhead.png);}
+  40%{background-image: url(images/fourarms.png);}
+  55%{background-image: url(images/fourarms.png);}
+  60%{background-image: url(images/humangasaur.png);}
+  75%{background-image: url(images/humangasaur.png);}
+  80%{background-image: url(images/swampfire.png);}
+  95%{background-image: url(images/swampfire.png);}
+  100%{background-image: url(images/bigchill.png);}
+  
+ }
